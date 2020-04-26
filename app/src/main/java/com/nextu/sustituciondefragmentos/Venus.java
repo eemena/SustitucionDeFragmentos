@@ -16,4 +16,10 @@ public class Venus extends Fragment {
         View view = inflater.inflate(R.layout.venus, container, false);
         return view;
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getActivity().setTitle("Venus");
+    }
 }

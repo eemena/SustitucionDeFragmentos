@@ -38,4 +38,10 @@ public class ListaDePlanetas extends ListFragment {
                 break;
         }
     }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getActivity().setTitle("Lista de Planetas");
+    }
 }
